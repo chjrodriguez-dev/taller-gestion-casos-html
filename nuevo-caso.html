@@ -7,7 +7,42 @@
 </head>
 <body>
 <h1>Registrar nuevo caso</h1>
+<!-- FORMULARIO -->
+<form action="" method="get">
 
+    <!-- Datos del cliente -->
+<fieldset>
+<legend>Datos del cliente</legend>
+<label for="nombre">Nombre del cliente:</label><br>
+<input type="text" id="nombre" name="nombre" required>
+<br><br>
+<label for="correo">Correo electrónico:</label><br>
+<input type="email" id="correo" name="correo" required>
+</fieldset>
+<br><br>
+
+<!-- Datos del producto y el tipo de caso -->
+ <fieldset>
+<legend>Datos del producto y el tipo de caso</legend>
+<label for="equipo">Producto o equipo:</label><br>
+<input type="text" id="equipo" name="equipo" required>
+<br><br>
+<label for="tipo">Tipo de caso:</label><br>
+<select id="tipo" name="tipo" required>
+<option value="">Seleccione una opción</option>
+<option value="garantia">Garantía</option>
+<option value="reparacion">Reparación</option>
+<option value="consulta">Consulta técnica</option>
+<option value="repuesto">Solicitud de repuesto</option>
+</select>
+<br><br>
+<label for="descripcion">Descripción del problema:</label><br>
+<textarea id="descripcion" name="descripcion" rows="5" cols="40" required></textarea>
+</fieldset>
+<br><br>
+
+
+</form>
 
 </body>
 </html>
